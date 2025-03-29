@@ -1,0 +1,77 @@
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(to right, #ffffff, #000000) !important;
+        font-family: 'Source Code Pro', monospace;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-card {
+        background: #2d2d2d;
+        color: white;
+        width: 400px;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .profile-pic img {
+        width: 112px; /* 80px * 1.4 */
+        height: 112px; /* 80px * 1.4 */
+        border-radius: 50%;
+    }
+    h2 {
+        margin-top: 21px; /* 15px * 1.4 */
+        font-size: 33.6px; /* 24px * 1.4 */
+    }
+    p {
+        font-size: 19.6px; /* 14px * 1.4 */
+        color: #bdbdbd;
+        margin-top: 14px; /* 10px * 1.4 */
+    }
+    p span {
+        color: #18050b;
+        font-weight: bold;
+    }
+    .contact-btn {
+        background: #424242;
+        color: white;
+        padding: 12px 12px; /* Reduced padding to make the button smaller */
+        border: none;
+        border-radius: 15px; /* Adjusted border radius */
+        cursor: pointer;
+        margin-top: 20px;
+        text-decoration: none;
+        font-size: 18px; /* Reduced font size */
+    }
+    .contact-btn:hover {
+        background: #535353;
+    }
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Added gap between social icons */
+        margin-top: 20px; /* Added margin to separate from other elements */
+    }
+    .social-icons i {
+        cursor: pointer;
+        color: #bdbdbd;
+    }
+    .social-icons i:hover {
+        color: white;
+    }
+    .social-icon-img {
+        width: 32px; /* Adjust size as needed */
+        height: 32px;
+        border-radius: 50%; /* Optional: Makes icons circular */
+        transition: transform 0.3s ease;
+    }
+
+    .social-icon-img:hover {
+        transform: scale(1.2); /* Slight zoom effect on hover */
+    }
