@@ -1,77 +1,92 @@
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background: linear-gradient(to right, #ffffff, #000000) !important;
-        font-family: 'Source Code Pro', monospace;
-    }
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'inter';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #000000, #2e2e2e);
+    color: white; /* Set text color to white */
+}
+
+.container {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 400px; /* Limit the width on larger screens */
+    text-align: center;
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-style: italic;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+social-icon-img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 600px) {
     .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .profile-card {
-        background: #2d2d2d;
-        color: white;
-        width: 400px;
-        padding: 20px;
-        border-radius: 20px;
-        text-align: center;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-    .profile-pic img {
-        width: 112px; /* 80px * 1.4 */
-        height: 112px; /* 80px * 1.4 */
-        border-radius: 50%;
-    }
-    h2 {
-        margin-top: 21px; /* 15px * 1.4 */
-        font-size: 33.6px; /* 24px * 1.4 */
-    }
-    p {
-        font-size: 19.6px; /* 14px * 1.4 */
-        color: #bdbdbd;
-        margin-top: 14px; /* 10px * 1.4 */
-    }
-    p span {
-        color: #18050b;
-        font-weight: bold;
-    }
-    .contact-btn {
-        background: #424242;
-        color: white;
-        padding: 12px 12px; /* Reduced padding to make the button smaller */
-        border: none;
-        border-radius: 15px; /* Adjusted border radius */
-        cursor: pointer;
-        margin-top: 20px;
-        text-decoration: none;
-        font-size: 18px; /* Reduced font size */
-    }
-    .contact-btn:hover {
-        background: #535353;
-    }
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 20px; /* Added gap between social icons */
-        margin-top: 20px; /* Added margin to separate from other elements */
-    }
-    .social-icons i {
-        cursor: pointer;
-        color: #bdbdbd;
-    }
-    .social-icons i:hover {
-        color: white;
-    }
-    .social-icon-img {
-        width: 32px; /* Adjust size as needed */
-        height: 32px;
-        border-radius: 50%; /* Optional: Makes icons circular */
-        transition: transform 0.3s ease;
+        padding: 15px;
     }
 
-    .social-icon-img:hover {
-        transform: scale(1.2); /* Slight zoom effect on hover */
+    .profile-pic img {
+        width: 100px;
+        height: 100px;
     }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .contact-btn {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+
+    .social-icon-img {
+        width: 28px;
+        height: 28px;
+    }
+}
